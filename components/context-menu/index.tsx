@@ -184,11 +184,6 @@ export function ContextMenu({ onRandomizeColors }: ContextMenuProps) {
           </button>
         )
       })}
-
-      {/* Easter egg indicator */}
-      <div className="px-4 py-2 border-t border-slate-6 mt-2">
-        <p className="text-xs text-slate-10 text-center">🥚 Easter Egg Activated!</p>
-      </div>
     </div>
   )
 }

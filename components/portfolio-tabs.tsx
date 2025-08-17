@@ -128,8 +128,8 @@ function HomeTab() {
       <div className="space-y-3">
         <h2 className="text-xl font-semibold text-slate-12">About Me</h2>
         <p className="text-slate-11 leading-relaxed text-sm">
-          I'm a passionate web developer with over 3 years of experience creating modern, responsive web applications. I
-          specialize in React, TypeScript, and full-stack development. I love turning complex problems into simple,
+          I'm a passionate web developer with over1 year of experience creating modern, responsive web applications. I
+          specialize in React, TypeScript, and Front-enddevelopment. I love turning complex problems into simple,
           beautiful, and intuitive solutions. When I'm not coding, you'll find me exploring new technologies or
           contributing to open-source projects.
         </p>
@@ -297,7 +297,7 @@ function ContactTab() {
           <div className="space-y-1 text-sm text-slate-11">
             <p>📍 Blida, Algeria</p>
             <p>💼 Available for freelance projects</p>
-            <p>Specializing in React, TypeScript & Full-Stack Development</p>
+            <p>Specializing in React, TypeScript & Front-endDevelopment</p>
           </div>
         </div>
 
@@ -306,7 +306,7 @@ function ContactTab() {
           <div className="grid grid-cols-2 gap-2 text-xs text-slate-11">
             <div>• Web Application Development</div>
             <div>• E-commerce Solutions</div>
-            <div>• Full-Stack Development</div>
+            <div>• Front-endDevelopment</div>
             <div>• Web Design</div>
             <div>• WordPress Development</div>
             <div>• Hosting Setup</div>

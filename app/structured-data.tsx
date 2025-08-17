@@ -14,7 +14,7 @@ export default function StructuredData() {
       "@type": "Organization",
       "name": "Freelance"
     },
-    "description": "Passionate web developer with 3+ years of experience in React, TypeScript, and full-stack development. Based in Blida, Algeria.",
+    "description": "Passionate web developer with 3+ years of experience in React, TypeScript, and Front-enddevelopment. Based in Blida, Algeria.",
     "knowsAbout": ["React", "TypeScript", "JavaScript", "Next.js", "Node.js", "Web Development"]
   };
 

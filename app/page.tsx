@@ -9,7 +9,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
   return {
     title: "Nassreddine Larbi Aissa - Full Stack Web Developer",
     description:
-      "Passionate web developer with 3+ years of experience in React, TypeScript, and full-stack development. Based in Blida, Algeria.",
+      "Passionate web developer with 1 year of experience in React, TypeScript, and front-end development. Based in Blida, Algeria.",
     keywords: ["web developer", "full stack developer", "React", "TypeScript", "JavaScript", "Next.js", "Blida", "Algeria", "frontend developer", "backend developer"],
     authors: [{ name: "Nassreddine Larbi Aissa" }],
     creator: "Nassreddine Larbi Aissa",
@@ -20,7 +20,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
       url: "https://web01.tech",
       title: "Nassreddine Larbi Aissa - Full Stack Web Developer",
       description:
-        "Passionate web developer with 3+ years of experience in React, TypeScript, and full-stack development. Based in Blida, Algeria.",
+        "Passionate web developer with 3+ years of experience in React, TypeScript, and front-end development. Based in Blida, Algeria.",
       siteName: "Nassreddine Larbi Aissa Portfolio",
       images: [
         {
@@ -35,7 +35,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
       card: "summary_large_image",
       title: "Nassreddine Larbi Aissa - Full Stack Web Developer",
       description:
-        "Passionate web developer with 3+ years of experience in React, TypeScript, and full-stack development. Based in Blida, Algeria.",
+        "Passionate web developer with 3+ years of experience in React, TypeScript, and Front-enddevelopment. Based in Blida, Algeria.",
       creator: "@nassreddine",
       images: ["https://web01.tech/profileimage.jpg"],
     },
