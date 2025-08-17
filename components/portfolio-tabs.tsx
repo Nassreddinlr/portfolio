@@ -210,6 +210,9 @@ function HomeTab() {
   )
 }
 
+import { ProjectCard } from "@/components/project-card";
+import { projects } from "@/lib/projects";
+
 function ProjectsTab() {
   return (
     <div className="space-y-6">
@@ -221,118 +224,12 @@ function ProjectsTab() {
 
       {/* Projects */}
       <div className="space-y-6">
-        {/* Project 1 */}
-        <div className="bg-slate-2 rounded-lg p-6 space-y-4 text-left">
-          <div className="space-y-2">
-            <h3 className="text-xl font-semibold text-slate-12">Events Management & Tickets Platform</h3>
-            <p className="text-sm text-slate-11 leading-relaxed">
-              This project is a comprehensive web platform for event management and ticket sales developed for New World
-              Digital Agency. It features three distinct panels: an admin panel for overall management, an event
-              organizer panel for event creators, and a user panel for ticket purchasers. The project took 4 months to
-              complete and showcases advanced full-stack development skills.
-            </p>
-          </div>
-
-          <div className="space-y-2">
-            <h4 className="font-medium text-slate-12">Key Features:</h4>
-            <ul className="text-sm text-slate-11 space-y-1 list-disc list-inside">
-              <li>Multi-role authentication system</li>
-              <li>Real-time ticket booking and management</li>
-              <li>3D interactive elements using Spline</li>
-              <li>Custom React components (no external libraries)</li>
-              <li>Responsive design with TypeScript</li>
-              <li>Deployed on Ubuntu VPS with Nginx and Docker</li>
-            </ul>
-          </div>
-
-          <div className="space-y-2">
-            <h4 className="font-medium text-slate-12">Technologies Used:</h4>
-            <div className="flex flex-wrap gap-2">
-              {["React", "TypeScript", "Django", "PostgreSQL", "Tailwind CSS", "Spline.com", "Docker", "Nginx"].map(
-                (tech) => (
-                  <span key={tech} className="px-3 py-1 bg-slate-4 text-slate-12 rounded-full text-xs font-medium">
-                    {tech}
-                  </span>
-                ),
-              )}
-            </div>
-          </div>
-        </div>
-
-        {/* Project 2 */}
-        <div className="bg-slate-2 rounded-lg p-6 space-y-4 text-left">
-          <div className="space-y-2">
-            <h3 className="text-xl font-semibold text-slate-12">Professional Domain Name Consultation Platform</h3>
-            <p className="text-sm text-slate-11 leading-relaxed">
-              A modern web application that helps users find, inquire about, and purchase premium domain names with
-              expert guidance. The platform features comprehensive domain search functionality, detailed domain listings
-              with pricing and categories, inquiry forms for specific domains, and professional consultation services.
-            </p>
-          </div>
-
-          <div className="space-y-2">
-            <h4 className="font-medium text-slate-12">Key Features:</h4>
-            <ul className="text-sm text-slate-11 space-y-1 list-disc list-inside">
-              <li>Advanced domain search with filters</li>
-              <li>Real-time domain availability checking</li>
-              <li>Detailed domain analytics and pricing</li>
-              <li>Professional consultation booking system</li>
-              <li>Responsive user-friendly interface</li>
-              <li>Secure payment integration</li>
-            </ul>
-          </div>
-
-          <div className="space-y-2">
-            <h4 className="font-medium text-slate-12">Technologies Used:</h4>
-            <div className="flex flex-wrap gap-2">
-              {["Next.js", "TypeScript", "Prisma", "Tailwind CSS", "React", "Supabase"].map((tech) => (
-                <span key={tech} className="px-3 py-1 bg-slate-4 text-slate-12 rounded-full text-xs font-medium">
-                  {tech}
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Project 3 */}
-        <div className="bg-slate-2 rounded-lg p-6 space-y-4 text-left">
-          <div className="space-y-2">
-            <h3 className="text-xl font-semibold text-slate-12">DAR EL FARAH - Wedding Venue Marketplace</h3>
-            <p className="text-sm text-slate-11 leading-relaxed">
-              DAR EL FARAH is a wedding venue marketplace specifically designed for the Algerian market, connecting
-              couples with venue owners. The platform offers a comprehensive solution for wedding venue discovery and
-              booking, featuring advanced search capabilities, interactive maps, and detailed venue showcases.
-            </p>
-          </div>
-
-          <div className="space-y-2">
-            <h4 className="font-medium text-slate-12">Key Features:</h4>
-            <ul className="text-sm text-slate-11 space-y-1 list-disc list-inside">
-              <li>Secure user authentication with JWT</li>
-              <li>Advanced venue search with multiple filters</li>
-              <li>Interactive Google Maps integration</li>
-              <li>Detailed venue listings with photo galleries</li>
-              <li>Venue comparison functionality</li>
-              <li>Owner dashboard for property management</li>
-            </ul>
-          </div>
-
-          <div className="space-y-2">
-            <h4 className="font-medium text-slate-12">Technologies Used:</h4>
-            <div className="flex flex-wrap gap-2">
-              {["React", "TypeScript", "Django REST", "PostgreSQL", "Tailwind CSS", "Google Maps API", "JWT"].map(
-                (tech) => (
-                  <span key={tech} className="px-3 py-1 bg-slate-4 text-slate-12 rounded-full text-xs font-medium">
-                    {tech}
-                  </span>
-                ),
-              )}
-            </div>
-          </div>
-        </div>
+        {projects.map((project, index) => (
+          <ProjectCard key={index} project={project} />
+        ))}
       </div>
     </div>
-  )
+  );
 }
 
 function ContactTab() {
